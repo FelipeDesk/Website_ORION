@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/jpeg">
+    <title>Orion GP | Contato</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body class="index">
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1 id="title-contact">Contato</h1>
+
+    <main id="main-container">
+        <section id="contacts_container">
+            <h3>Entre em contato</h3>
+            <p>Preencha o formulário ao lado e entraremos em contato com você o mais rápido possível.</p>
+
+            <div id="cards_container">
+                <a href="tel:+5511993883883" target="_blank" class="contact-card phone">
+                    <div class="card-icon">
+                        <i class="bi bi-telephone-fill"></i>
+                    </div>
+                    <div class="card-infos">
+                        <p>Telefone</p>
+                        <span>(11) 99999-9999</span>
+                    </div>
+                </a>
+                <a href="https://www.google.com.br/maps/place/Shopping+Iguatemi/@-23.573674,-46.693831,14.5z/data=!4m6!3m5!1s0x94ce576d78fdbdb5:0x5ffc6f2485c8ae!8m2!3d-23.5769265!4d-46.6882984!16s%2Fm%2F04m__zj?entry=ttu&g_ep=EgoyMDI2MDEwNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="contact-card location">
+                    <div class="card-icon">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <div class="card-infos">
+                        <p>Localização</p>
+                        <span>Rua Exemplo, 123 - Bairro Exemplo, Cidade - Estado</span>
+                    </div>
+                </a>
+                <a href="mailto:contato@oriongep.com.br" target="_blank" class="contact-card email">
+                    <div class="card-icon">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <div class="card-infos">
+                        <p>E-mail</p>
+                        <span>contato@oriongep.com</span>
+                    </div>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=999999999" target="_blank" class="contact-card whatsapp">
+                    <div class="card-icon">
+                        <i class="bi bi-whatsapp"></i>
+                    </div>
+                    <div class="card-infos">
+                        <p>Whatsapp</p>
+                        <span>(51) 99999-9999</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact_form_container">
+            <h3>Contatar</h3>
+            <form action="https://formsubmit.co/contato@oriongep.com.br" method="post" id="contact_form">
+                <div class="input-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="Nome" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="E-mail" required>
+                </div>
+                <div class="input-group">
+                    <label for="subject">Assunto</label>
+                    <input type="text" id="subject" name="Assunto" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Mensagem</label>
+                    <textarea name="Mensagem" id="message" required rows="5"></textarea>
+                </div>
+                <input type="hidden" name="_subject" value="Nova Mensagem!">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="http://oriongep.com.br/obrigado.html">
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+
+    <a href="https://api.whatsapp.com/send?phone=999999999" target="_blank" class="float-button">
+        <div class="whatsapp-button">
+        <i class="bi bi-whatsapp whatsapp-button"></i>
+        </div>
+    </a>
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img src="img/logo.png" alt="">
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="footer-link" id="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="footer-link" id="whatsapp"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+            <ul class="footer-list">
+                <li><h3>MENU</h3></li>
+                <li><a href="index.html" class="footer-link">Início</a></li>
+                <li><a href="sobre.html" class="footer-link">Sobre</a></li>
+                <li><a href="servicos.html" class="footer-link">Serviços</a></li>
+                <li><a href="contato.html" class="footer-link">Contatos</a></li>
+            </ul>
+            <ul class="footer-list">
+                <li><h3>SERVIÇOS</h3></li>
+                <li><a href="servico01.html" class="footer-link">Controladoria de Acesso e Portaria</a></li>
+                <li><a href="servico02.html" class="footer-link">Limpeza e Zeladoria</a></li>
+                <li><a href="servico03.html" class="footer-link">Segurança para Festas e Eventos</a></li>
+            </ul>
+        </div>
+
+        <div id="footer_copyright">
+            &#169
+            2026 Developed by Felipe Santiago & Maciel Junior
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
