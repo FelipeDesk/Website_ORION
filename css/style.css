@@ -815,7 +815,7 @@
     .btn-nav-box {
         bottom: 20px;
     }
-
+    
     .principal{
         padding: 20px;
     }
@@ -826,14 +826,14 @@
         padding: 0 20px;
     }
     
-    .product img {
-        aspect-ratio: 16 / 10;
-    }
-
     .product_title{
         font-size: 18px;
     }
-
+    
+    .product img {
+        aspect-ratio: 16 / 10;
+    }
+    
     .about-us{
         width: 80%;
     }
