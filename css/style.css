@@ -57,7 +57,7 @@
     position: absolute;
     left: 10%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-30%);
     z-index: 1;
     width: 80%;
     max-width: 600px;
@@ -880,6 +880,10 @@
 }
 
 @media (max-width: 520px) {
+    .slider-setas{
+        display: none;
+    }
+
     .atividade-realizada-photos {
         grid-template-columns: 1fr;
     }
@@ -891,7 +895,7 @@
     .obrigado{
         width: 320px;
         padding: 20px;
-}
+    }
 
     .obrigado h1{
         padding-bottom: 10px;
