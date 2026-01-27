@@ -81,7 +81,7 @@ nav{
     height: 25vh;
     width: 100%;
     display: flex;
-    background-image: linear-gradient(rgba(30, 26, 4, 0.7), rgba(30, 25, 4, 0.7)), url(img/fundo.png);
+    background-image: linear-gradient(rgba(30, 26, 4, 0.7), rgba(30, 25, 4, 0.7)), url(../img/fundo.png);
     background-position: center;
     background-size: cover;
     justify-content: center;
