@@ -55,7 +55,8 @@ btnProx.addEventListener('click', () => {
     if(imgAtiva >= contadorImg){
         imgAtiva = 0;
     }
-    mostrarSlider()
+    mostrarSlider();
+    resetarAutoPlay();
 })
 
 btnAnter.addEventListener('click', () => {
@@ -64,6 +65,7 @@ btnAnter.addEventListener('click', () => {
         imgAtiva = contadorImg - 1;
     }
     mostrarSlider();
+    resetarAutoPlay();
 })
 
 function mostrarSlider(){
@@ -80,13 +82,16 @@ function mostrarSlider(){
 btnNav.forEach((btn, indice) => {
     btn.addEventListener('click', () => {
         imgAtiva = indice;
-        mostrarSlider()
+        mostrarSlider();
+        resetarAutoPlay();
     })
 })
 
 
+let autoPlayInterval;
+
 function iniciarAutoPlay(){
-    setInterval(() => {
+    autoPlayInterval = setInterval(() => {
         imgAtiva++;
         if(imgAtiva >= contadorImg){
             imgAtiva = 0;
@@ -96,3 +101,8 @@ function iniciarAutoPlay(){
 }
 
 iniciarAutoPlay();
+
+function resetarAutoPlay(){
+    clearInterval(autoPlayInterval);
+    iniciarAutoPlay();
+}

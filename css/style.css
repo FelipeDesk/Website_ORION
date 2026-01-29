@@ -405,6 +405,10 @@
     text-align: justify;
 }
 
+.services .container a{
+    text-decoration: none;
+}
+
 .services .content p{
     text-align: justify;
 }
